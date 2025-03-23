@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+    
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: #fff;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .logo img {
+            height: 50px;
+        }
+    
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    
+        .contact {
+            background: #8a2be2;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    
+        .client-support {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    
+        .support-btn {
+            background: #f1f1f1;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+    
+        .support-number {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+        }
+    
+        .hero-text {
+            max-width: 50%;
+        }
+    
+        .hero-text h1 {
+            font-size: 42px;
+            color: #000;
+        }
+    
+        .hero-text p {
+            font-size: 18px;
+        }
+    
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 10px 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    
+        .btn-primary {
+            background: #8a2be2;
+            color: #fff;
+        }
+    
+        .btn-secondary {
+            background: #ccc;
+            color: #000;
+        }
+    
+        .hero-image img {
+            max-width: 90%;
+            border-radius: 10px;
+        }
+    
+        .stats-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 30px;
+            background: #f8f8f8;
+            text-align: center;
+        }
+    
+        .stat-item {
+            flex: 1;
+            padding: 20px;
+        }
+    
+        .stat-item h2 {
+            font-size: 24px;
+            color: #000;
+        }
+    
+        .stat-item p {
+            font-size: 16px;
+            color: #555;
+        }
+    
+        .google-reviews img {
+            height: 50px;
+        }
+    </style>
+ <style>
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .button-primary {
+            background-color: #6366f1; /* Indigo 500 */
+            color: white;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .button-primary:hover {
+            background-color: #4f46e5; /* Indigo 600 */
+        }
+        .button-secondary {
+            background-color: #e5e7eb; /* Gray 200 */
+            color: #374151; /* Gray 700 */
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        .button-secondary:hover {
+            background-color: #d4d4d8; /* Gray 300 */
+            color: #1f2937; /* Gray 800 */
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-100 to-gray-200 font-sans">
+    <header>
+        <div class="logo">
+            <img src="Genfutech.png " alt="GenFuTech Logo">
+        </div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="#">Solutions</a>
+            <a href="#">Company</a>
+            <a href="#">Case Studies</a>
+            <a href="projects.html">Projects</a>
+            <a href="#">Resources</a>
+        </nav>
+        <div class="client-support">
+            <a href="#" class="support-btn">Client Support →</a>
+            <span class="support-number">8882568627</span>
+            <a href="./contact.html" class="contact">Contact Us</a>
+        </div>
+    </header>
+    
+    <div class="container mx-auto py-16 px-4">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://source.unsplash.com/600x400/?web-design" alt="Project 1" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Modern Website Redesign</h3>
+                    <p class="text-gray-700 text-sm mb-5">A complete overhaul of a local business website, focusing on user experience and modern aesthetics. Technologies: HTML, CSS, JavaScript, Tailwind CSS.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="button-primary inline-block font-semibold py-3 px-6 rounded-full text-sm">View Live</a>
+                        <a href="#" class="button-secondary inline-block font-semibold py-3 px-6 rounded-full text-sm">Case Study</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://source.unsplash.com/600x400/?mobile-app" alt="Project 2" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Mobile App Concept</h3>
+                    <p class="text-gray-700 text-sm mb-5">A conceptual design for a productivity mobile application, including UI/UX exploration and prototype. Tools: Figma, Adobe XD.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="button-primary inline-block font-semibold py-3 px-6 rounded-full text-sm">View Prototype</a>
+                        <a href="#" class="button-secondary inline-block font-semibold py-3 px-6 rounded-full text-sm">More Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://source.unsplash.com/600x400/?branding" alt="Project 3" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Brand Identity Design</h3>
+                    <p class="text-gray-700 text-sm mb-5">Development of a complete brand identity for a startup, including logo, color palette, and typography guidelines. Software: Adobe Illustrator.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="button-primary inline-block font-semibold py-3 px-6 rounded-full text-sm">See Guidelines</a>
+                        <a href="#" class="button-secondary inline-block font-semibold py-3 px-6 rounded-full text-sm">Process</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://source.unsplash.com/600x400/?e-commerce" alt="Project 4" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">E-commerce Platform UI</h3>
+                    <p class="text-gray-700 text-sm mb-5">User interface design for an online store, focusing on intuitive navigation and a seamless shopping experience. Tools: Sketch, InVision.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="button-primary inline-block font-semibold py-3 px-6 rounded-full text-sm">Explore UI</a>
+                        <a href="#" class="button-secondary inline-block font-semibold py-3 px-6 rounded-full text-sm">About the Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://source.unsplash.com/600x400/?illustration" alt="Project 5" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Digital Illustration Series</h3>
+                    <p class="text-gray-700 text-sm mb-5">A collection of digital illustrations created for a personal project, exploring different styles and themes. Software: Procreate, Adobe Photoshop.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="button-primary inline-block font-semibold py-3 px-6 rounded-full text-sm">View Gallery</a>
+                        <span class="inline-block py-3 px-6 text-sm"></span> </div>
+                </div>
+            </div>
+
+            <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://source.unsplash.com/600x400/?data-visualization" alt="Project 6" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Data Visualization Dashboard</h3>
+                    <p class="text-gray-700 text-sm mb-5">Design and development of a dashboard to visualize key business metrics, focusing on clarity and interactivity. Technologies: React, Chart.js, Tailwind CSS.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="button-primary inline-block font-semibold py-3 px-6 rounded-full text-sm">See Dashboard</a>
+                        <a href="#" class="button-secondary inline-block font-semibold py-3 px-6 rounded-full text-sm">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+    </div>
+
+
+    <div class="bg-gray-100 font-sans">
+        <div class="relative">
+           
+            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 py-16 px-4">
+                <div class="text-white bg-gray-800 p-8 rounded-lg shadow-md">
+                    <h2 class="text-3xl font-semibold mb-6">Partner with Us for Comprehensive IT</h2>
+                    <p class="text-lg mb-6">We're happy to answer any questions you may have and help you determine
+                        which of our services best fit your needs.</p>
+                    <p class="text-xl font-semibold mb-4">Call us at: <span class="text-blue-400">9987094081</span></p>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-2">Your benefits:</h3>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-blue-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Client-oriented
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-blue-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Results-driven
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-blue-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Independent
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-blue-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Problem-solving
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-blue-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Competent
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-blue-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Transparent
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">What happens next?</h3>
+                        <div class="flex gap-6">
+                            <div class="text-center">
+                                <span class="block text-2xl font-bold text-blue-500 mb-1">1</span>
+                                <p class="text-sm text-gray-300">We Schedule a call at your convenience</p>
+                            </div>
+                            <div class="text-center">
+                                <span class="block text-2xl font-bold text-blue-500 mb-1">2</span>
+                                <p class="text-sm text-gray-300">We do a discovery and consulting meeting</p>
+                            </div>
+                            <div class="text-center">
+                                <span class="block text-2xl font-bold text-blue-500 mb-1">3</span>
+                                <p class="text-sm text-gray-300">We prepare a proposal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-800">Schedule a Free Consultation</h2>
+                    <form>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label for="first_name" class="block text-gray-700 text-sm font-bold mb-2">First
+                                    name</label>
+                                <input type="text" id="first_name"
+                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    placeholder="First name">
+                            </div>
+                            <div>
+                                <label for="last_name" class="block text-gray-700 text-sm font-bold mb-2">Last
+                                    name</label>
+                                <input type="text" id="last_name"
+                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="company" class="block text-gray-700 text-sm font-bold mb-2">Company /
+                                Organization</label>
+                            <input type="text" id="company"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                placeholder="Company / Organization">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Company email</label>
+                            <input type="email" id="email"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                placeholder="Company email">
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone</label>
+                            <input type="tel" id="phone"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                placeholder="Phone">
+                        </div>
+                        <div class="mb-4">
+                            <label for="help" class="block text-gray-700 text-sm font-bold mb-2">How Can We Help
+                                You?</label>
+                            <div class="relative">
+                                <select id="help"
+                                    class="block appearance-none w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                    <option>Select Option</option>
+                                    <option>IT Support</option>
+                                    <option>Network Solutions</option>
+                                    <option>Cloud Services</option>
+                                    <option>Cybersecurity</option>
+                                    <option>Other</option>
+                                </select>
+                                <div
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 12a1 1 0 00-1-1h-3a1 1 0 000 2h3a1 1 0 001-1zm0-6a1 1 0 00-1-1h-3a1 1 0 000 2h3a1 1 0 001-1z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                            <textarea id="message" rows="4"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                placeholder="To better assist you, please describe how we can help"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="bg-black">
+        <footer class="relative py-12 md:py-16 lg:py-20 text-white">
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="relative w-full h-full">
+                    <div class="bubble top-1/4 left-1/4"></div>
+                    <div class="bubble top-1/2 left-1/2"></div>
+                    <div class="bubble top-1/3 right-1/4"></div>
+                    <div class="bubble bottom-1/4 left-1/3"></div>
+                    <div class="bubble bottom-1/2 right-1/3"></div>
+                    <div class="bubble top-10 left-20"></div>
+                    <div class="bubble top-20 right-10"></div>
+                    <div class="bubble bottom-10 left-10"></div>
+                    <div class="bubble bottom-20 right-20"></div>
+                    <div class="bubble top-40 left-40"></div>
+                    <div class="bubble bottom-40 right-40"></div>
+                    <div class="bubble top-5 right-40"></div>
+                    <div class="bubble bottom-5 left-50"></div>
+                </div>
+            </div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Solutions</h3>
+                        <ul class="list-none space-y-2">
+                            <li><a href="#" class="hover:text-purple-400 footer-link">Website Development</a></li>
+                            <li><a href="#" class="hover:text-purple-400 footer-link">Software Development</a></li>
+                            <li><a href="#" class="hover:text-purple-400 footer-link">App Development</a></li>
+                            <li><a href="#" class="hover:text-purple-400 footer-link">Social Media Marketing</a></li>
+                            <li><a href="#" class="hover:text-purple-400 footer-link">Digital Marketing</a></li>
+                            <li><a href="#" class="hover:text-purple-400 footer-link">Network Connectivity</a></li>
+                            <li><a href="#" class="hover:text-purple-400 footer-link">ERP Solutions</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Company</h3>
+                        <ul class="list-none space-y-2">
+                            <li><a href="#" class="hover:text-purple-400 footer-link">About us</a></li>
+                            <li><a href="#" class="hover:text-purple-400 footer-link">Why us</a></li>
+                            <li><a href="#" class="hover:text-purple-400 footer-link">Careers</a></li>
+                            <li><a href="#" class="hover:text-purple-400 footer-link">Partners & Certifications</a></li>
+                            <li><a href="#" class="hover:text-purple-400 footer-link">Reviews & Awards</a></li>
+                            <li><a href="#" class="hover:text-purple-400 footer-link">Blog</a></li>
+                            <li><a href="#" class="hover:text-purple-400 footer-link">Case studies</a></li>
+                            <li><a href="#" class="hover:text-purple-400 footer-link">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img src="Genfutech.png" alt="GenFuTech">
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="bg-purple-500 hover:bg-purple-600 text-white font-semibold py-3 px-6 rounded-full block w-fit mb-6 schedule-button">Schedule
+                            Consultation</a>
+                        <div>
+                            <h3 class="text-sm font-semibold mb-2">Don't miss out updates</h3>
+                            <div class="relative">
+                                <input type="email"
+                                    class="newsletter-input bg-gray-900 border border-gray-700 rounded-full py-2 px-4 w-full text-sm focus:outline-none focus:border-purple-400"
+                                    placeholder="Your email address">
+                                <button
+                                    class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-purple-500 hover:bg-purple-600 text-white rounded-full px-3 py-1 text-sm focus:outline-none">Send
+                                    →</button>
+                            </div>
+                            <div class="mt-2">
+                                <label class="inline-flex items-center text-xs text-gray-400 checkbox-label">
+                                    <input type="checkbox"
+                                        class="form-checkbox h-4 w-4 text-purple-500 focus:ring-purple-400 rounded border-gray-700 bg-gray-900">
+                                    <span class="ml-2">I agree to the Privacy Policy and give my permission to process
+                                        my personal data for the purposes specified in the Privacy Policy.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <footer class="text-center mt-16 py-6 text-gray-600 border-t border-gray-300">
+        <p>&copy; 2025 My Portfolio. Crafted with Tailwind CSS.</p>
+    </footer>
+</body>
+</html>

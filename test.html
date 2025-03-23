@@ -3,94 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Solutions</title>
+    <title>My Projects</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .button-primary {
+            background-color: #6366f1; /* Indigo 500 */
+            color: white;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .button-primary:hover {
+            background-color: #4f46e5; /* Indigo 600 */
+        }
+        .button-secondary {
+            background-color: #e5e7eb; /* Gray 200 */
+            color: #374151; /* Gray 700 */
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        .button-secondary:hover {
+            background-color: #d4d4d8; /* Gray 300 */
+            color: #1f2937; /* Gray 800 */
+        }
+    </style>
 </head>
-<body class="bg-gray-100 font-sans">
-    <div class="container mx-auto py-12 px-4">
-        <div class="mb-6">
-            <p class="text-sm text-gray-500 uppercase tracking-wide">How We Do</p>
-            <h2 class="text-3xl font-bold text-gray-800">Solutions</h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="p-6">
-                    <div class="flex justify-center items-center h-12 w-12 text-purple-500 bg-purple-100 rounded-full mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L21 3m-3.75 3.75L21 3m-3.75 3.75l-3 3M21 3l-3 3m-3-3L15 9.75m-3 3L12 12m-3-3L9.75 15m3 3L6 21m-3-3l3-3m3 3l3 3" />
-                        </svg>
+<body class="bg-gradient-to-br from-gray-100 to-gray-200 font-sans">
+    <div class="container mx-auto py-16 px-4">
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-bold text-indigo-700">My Creative Projects</h1>
+            <p class="text-xl text-gray-700 mt-3">A curated collection of my design and development work.</p>
+        </header>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://source.unsplash.com/600x400/?web-design" alt="Project 1" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Modern Website Redesign</h3>
+                    <p class="text-gray-700 text-sm mb-5">A complete overhaul of a local business website, focusing on user experience and modern aesthetics. Technologies: HTML, CSS, JavaScript, Tailwind CSS.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="button-primary inline-block font-semibold py-3 px-6 rounded-full text-sm">View Live</a>
+                        <a href="#" class="button-secondary inline-block font-semibold py-3 px-6 rounded-full text-sm">Case Study</a>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Website Development</h3>
-                    <p class="text-gray-600 text-sm mb-4">"Crafting dynamic, user-friendly websites that drive engagement and deliver results."</p>
-                    <a href="#" class="text-purple-500 hover:text-purple-700 text-sm font-medium">Learn more</a>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="p-6">
-                    <div class="flex justify-center items-center h-12 w-12 text-purple-500 bg-purple-100 rounded-full mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.037a4.5 4.5 0 01-3.916 4.21c-.673.14-1.32-.052-1.794-.414a4.5 4.5 0 01-3.75-3.75c-.362-.474-.566-1.115-.414-1.794V17.25m12 0v1.037a4.5 4.5 0 013.916 4.21c.673.14 1.32-.052 1.794-.414a4.5 4.5 0 013.75-3.75c.362-.474.566-1.115.414-1.794V17.25m-12 0H18m-12 0H6m12 0v-3.75c0-.621-.504-1.125-1.125-1.125a4.5 4.5 0 00-3.75 3.75m7.5-3.75c0 .621.504 1.125 1.125 1.125a4.5 4.5 0 013.75-3.75m-1.5-3.75c-.621 0-1.125.504-1.125 1.125v7.5m3-7.5c.621 0 1.125.504 1.125 1.125v7.5m-15 3c.621 0 1.125-.504 1.125-1.125v-3.75m-3 3c-.621 0-1.125-.504-1.125-1.125v-3.75" />
-                        </svg>
+
+            <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://source.unsplash.com/600x400/?mobile-app" alt="Project 2" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Mobile App Concept</h3>
+                    <p class="text-gray-700 text-sm mb-5">A conceptual design for a productivity mobile application, including UI/UX exploration and prototype. Tools: Figma, Adobe XD.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="button-primary inline-block font-semibold py-3 px-6 rounded-full text-sm">View Prototype</a>
+                        <a href="#" class="button-secondary inline-block font-semibold py-3 px-6 rounded-full text-sm">More Details</a>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Software Development</h3>
-                    <p class="text-gray-600 text-sm mb-4">"Empowering businesses with cutting-edge software solutions tailored for growth and innovation."</p>
-                    <a href="#" class="text-purple-500 hover:text-purple-700 text-sm font-medium">Learn more</a>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="p-6">
-                    <div class="flex justify-center items-center h-12 w-12 text-purple-500 bg-purple-100 rounded-full mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 22.5V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0v3m3-3v3m-3 0h3m-3 13.25a7.5 7.5 0 1015-7.5M10.5 19.5h3" />
-                        </svg>
+
+            <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://source.unsplash.com/600x400/?branding" alt="Project 3" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Brand Identity Design</h3>
+                    <p class="text-gray-700 text-sm mb-5">Development of a complete brand identity for a startup, including logo, color palette, and typography guidelines. Software: Adobe Illustrator.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="button-primary inline-block font-semibold py-3 px-6 rounded-full text-sm">See Guidelines</a>
+                        <a href="#" class="button-secondary inline-block font-semibold py-3 px-6 rounded-full text-sm">Process</a>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">App Development</h3>
-                    <p class="text-gray-600 text-sm mb-4">"Creating seamless, user-friendly apps tailored to drive your business forward."</p>
-                    <a href="#" class="text-purple-500 hover:text-purple-700 text-sm font-medium">Learn more</a>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="p-6">
-                    <div class="flex justify-center items-center h-12 w-12 text-purple-500 bg-purple-100 rounded-full mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a3 3 0 00-3-3H7.5a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3v-3.75m-9 0h3m-3 3h3m-3-3h3m-3 3h3" />
-                        </svg>
+
+            <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://source.unsplash.com/600x400/?e-commerce" alt="Project 4" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">E-commerce Platform UI</h3>
+                    <p class="text-gray-700 text-sm mb-5">User interface design for an online store, focusing on intuitive navigation and a seamless shopping experience. Tools: Sketch, InVision.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="button-primary inline-block font-semibold py-3 px-6 rounded-full text-sm">Explore UI</a>
+                        <a href="#" class="button-secondary inline-block font-semibold py-3 px-6 rounded-full text-sm">About the Project</a>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Social Media Marketing</h3>
-                    <p class="text-gray-600 text-sm mb-4">"Boost your brand's online presence with targeted social media strategies that drive engagement and growth."</p>
-                    <a href="#" class="text-purple-500 hover:text-purple-700 text-sm font-medium">Learn more</a>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="p-6">
-                    <div class="flex justify-center items-center h-12 w-12 text-purple-500 bg-purple-100 rounded-full mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m-16.034 9.98l-2.74-1.22m0 0l3.22 3.22m3.736-3.736l3.22 3.22M1.5 6l4.5 4.5m5.26-5.26L15 10.5" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Digital Marketing</h3>
-                    <p class="text-gray-600 text-sm mb-4">"Adycoo delivers data-driven digital marketing strategies that boost brand visibility and drive business growth."</p>
-                    <a href="#" class="text-purple-500 hover:text-purple-700 text-sm font-medium">Learn more</a>
+
+            <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://source.unsplash.com/600x400/?illustration" alt="Project 5" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Digital Illustration Series</h3>
+                    <p class="text-gray-700 text-sm mb-5">A collection of digital illustrations created for a personal project, exploring different styles and themes. Software: Procreate, Adobe Photoshop.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="button-primary inline-block font-semibold py-3 px-6 rounded-full text-sm">View Gallery</a>
+                        <span class="inline-block py-3 px-6 text-sm"></span> </div>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="p-6">
-                    <div class="flex justify-center items-center h-12 w-12 text-purple-500 bg-purple-100 rounded-full mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+
+            <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://source.unsplash.com/600x400/?data-visualization" alt="Project 6" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Data Visualization Dashboard</h3>
+                    <p class="text-gray-700 text-sm mb-5">Design and development of a dashboard to visualize key business metrics, focusing on clarity and interactivity. Technologies: React, Chart.js, Tailwind CSS.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="button-primary inline-block font-semibold py-3 px-6 rounded-full text-sm">See Dashboard</a>
+                        <a href="#" class="button-secondary inline-block font-semibold py-3 px-6 rounded-full text-sm">GitHub</a>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Creative Design</h3>
-                    <p class="text-gray-600 text-sm mb-4">"Creative designs that captivate and communicate your brand's story."</p>
-                    <a href="#" class="text-purple-500 hover:text-purple-700 text-sm font-medium">Learn more</a>
                 </div>
             </div>
-        </div>
-        <div class="mt-8 text-center">
-            <button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full">
-                View All Solutions
-            </button>
-        </div>
+        </section>
+
+        <footer class="text-center mt-16 py-6 text-gray-600 border-t border-gray-300">
+            <p>&copy; 2025 My Portfolio. Crafted with Tailwind CSS.</p>
+        </footer>
     </div>
 </body>
 </html>
